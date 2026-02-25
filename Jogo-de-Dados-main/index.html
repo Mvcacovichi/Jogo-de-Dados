@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/favicon.svg">
+    <title>Jogo de Dados - Batalha Épica</title>
+</head>
+
+<body>
+    <div id="falling-dice-container"></div>
+    <div class="blob shape-1"></div>
+    <div class="blob shape-2"></div>
+
+    <main class="glass-container">
+        <h1 id="result-title">Clique para Jogar!</h1>
+
+        <div class="dice-wrapper">
+            <div class="dice">
+                <h2>Jogador 1</h2>
+                <div class="dice-scene">
+                    <div class="cube" id="cube1">
+                        <div class="cube__face cube__face--1">
+                            <div class="dot red"></div>
+                        </div>
+                        <div class="cube__face cube__face--2">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cube__face cube__face--3">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cube__face cube__face--4">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cube__face cube__face--5">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cube__face cube__face--6">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dice">
+                <h2>Jogador 2</h2>
+                <div class="dice-scene">
+                    <div class="cube" id="cube2">
+                        <div class="cube__face cube__face--1">
+                            <div class="dot red"></div>
+                        </div>
+                        <div class="cube__face cube__face--2">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cube__face cube__face--3">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cube__face cube__face--4">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cube__face cube__face--5">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="cube__face cube__face--6">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button id="roll-btn" class="glow-on-hover">Rolar os Dados!</button>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Marcio Viana Cacovichi</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
