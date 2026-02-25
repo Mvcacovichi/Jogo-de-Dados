@@ -3,7 +3,7 @@ const path = require('path');
 
 const dir = path.join(__dirname, 'img');
 if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir);
+  fs.mkdirSync(dir);
 }
 
 const template = (dots) => `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -31,16 +31,16 @@ const template = (dots) => `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/
 const dot = (cx, cy, isRed = false) => `<circle cx="${cx}" cy="${cy}" r="8" fill="url(#${isRed ? 'redDotGrad' : 'dotGrad'})" />`;
 
 const faces = [
-    dot(50, 50, true), // 1
-    dot(30, 30) + dot(70, 70), // 2
-    dot(30, 30) + dot(50, 50) + dot(70, 70), // 3
-    dot(30, 30) + dot(70, 30) + dot(30, 70) + dot(70, 70), // 4
-    dot(30, 30) + dot(70, 30) + dot(50, 50) + dot(30, 70) + dot(70, 70), // 5
-    dot(30, 25) + dot(70, 25) + dot(30, 50) + dot(70, 50) + dot(30, 75) + dot(70, 75) // 6
+  dot(50, 50, true), // 1
+  dot(30, 30) + dot(70, 70), // 2
+  dot(30, 30) + dot(50, 50) + dot(70, 70), // 3
+  dot(30, 30) + dot(70, 30) + dot(30, 70) + dot(70, 70), // 4
+  dot(30, 30) + dot(70, 30) + dot(50, 50) + dot(30, 70) + dot(70, 70), // 5
+  dot(30, 25) + dot(70, 25) + dot(30, 50) + dot(70, 50) + dot(30, 75) + dot(70, 75) // 6
 ];
 
 faces.forEach((dots, i) => {
-    fs.writeFileSync(path.join(dir, `Dado${i + 1}.svg`), template(dots));
+  fs.writeFileSync(path.join(dir, `Dado${i + 1}.svg`), template(dots));
 });
 
 const favicon = `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
